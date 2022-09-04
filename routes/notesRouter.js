@@ -53,20 +53,26 @@ router.post("/", (req, res) => {
 
 //api DELETE request
 router.delete("/:id", (req, res) => {
+  //declares the id of the request
   const id = req.params.id;
 
+  //declares the data in the db.json file at readable code
   let data = fs.readFileSync("./db/db.json", "utf-8");
 
+  //declares the data variable and parses the data into objects
   parsedNotes = [].concat(JSON.parse(data));
 
+  //filters the parsedData by filtering out the selected id
   const parsedData = parsedNotes.filter((data) => data.id !== id);
 
+  //writes back to the db.json file with new parsedDate
   fs.writeFile("./db/db.json", JSON.stringify(parsedData), (err) => {
     if (err) {
       console.error(err);
       return;
     }
   });
+  //shows data back to the user
   res.json(parsedData);
 
   console.log(`Note ${req.method}, Success`);
