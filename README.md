@@ -2,7 +2,7 @@
 
   ## Description
 
-  My program allows users to write notes and save them to a data base or delete the notes from the data base.
+  My program allows users to write notes and save them to a data base or delete the notes from the data base. The program was made using NodeJS and Express.
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -23,7 +23,8 @@
 
   Once you have the code in visual studio, open a new terminal and type 'npm i' to get the right npm packages. Next, you will start the server by typing 'node server.js' into the terminal. Finally, copy the localhost link in the terminal and paste the link into the url.
   
-  [Link to working app](https://shielded-fortress-29538.herokuapp.com/)
+  Web Link:
+  [Note-Taker](https://shielded-fortress-29538.herokuapp.com/)
 
   ## Credits
 
