@@ -27,7 +27,7 @@
 
   ## Credits
 
-  I was the only one to develop my app.
+ LardexTheLarge
 
   ## License
 
